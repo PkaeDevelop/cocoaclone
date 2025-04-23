@@ -3,26 +3,31 @@
 <!--_blank 는 새창에서 연다-->
 <!--이미지 태그는 닫아주는 태그가 없다-->
 <!--src 태그는 hi에서 동작안함-->
-<h1>내 웹사이트</h1>
-<h2>내 웹사이트</h2>
-<h3>내 웹사이트</h3>
-<h4>내 웹사이트</h4>
-<h5>내 웹사이트</h5>
-<h6>내 웹사이트</h6>
+<!--body는 콘텐츠를 보여주는곳이고 head는 페이지에 대한 환경설정을 하는곳이다-->
+<!--브라우져안에 보여질 내용은 전부 body 태그 안에 있어야한다.-->
+<!--meta 태그는 부가적인 정보를 표현할때 사용한다. -->
+<!--태그 검색할때 Mdn을 붙여서 검색하면 좋다 -->
+<!--w3School을 사용하면 안되는 이유 :  MDN are the ones that create the standards, MDN is non profit, W3C has commercial interests + the source of W3C is MDN :)-->
 
-<ul>
-  <li>beer</li>
-  <li>김치</li>
-  <li>meat</li>
-  <li>milk</li>
-</ul>
-
-<ol>
-  <li>beer</li>
-  <li>김치</li>
-  <li>meat</li>
-  <li>milk</li>
-</ol>
-
-<a href="http:/google.com" target="_blank">구글링크</a>
-<img src="https://img.choroc.com/newshop/goods/024444/024444_1.jpg" />
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <link
+      rel="shortcut icon"
+      sizes="16x16 32x32 64x64"
+      href="https://nomadcoders.co/m.svg"
+    />
+    <title>Home - My first website.</title>
+    <meta name="description" content="This is my website" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Hello!</h1>
+    <a href="http://google.com" target="_blank">구글</a>
+    <img src="asset/dog.jpg" />
+    <audio
+      controls="eanble"
+      src="asset/032. Rottara Rottara (Karaoke).mp3"
+    ></audio>
+  </body>
+</html>
