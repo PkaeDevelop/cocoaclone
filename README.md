@@ -15,6 +15,8 @@
 9. 태그 검색할때 Mdn을 붙여서 검색하면 좋다
 10. w3School을 사용하면 안되는 이유 : MDN are the ones that create the standards, MDN is non profit, W3C has commercial interests + the source of W3C is MDN :)
 
+3.0부터 진행
+
 =vsc 간편 단축키=
 VSC 간편 단축키
 
@@ -45,3 +47,4 @@ Top / Bottom of File: ⌘ + ↑ / ↓ or Ctrl + Home / End
 
 사이드바 숨기기
 Hide / Show Sidebar: ⌘ + B or Ctrl + B
+-->노마드 코더 코코아클론 강의 2.7 댓글 참고
