@@ -14,8 +14,16 @@
 8. meta 태그는 부가적인 정보를 표현할때 사용한다.
 9. 태그 검색할때 Mdn을 붙여서 검색하면 좋다
 10. w3School을 사용하면 안되는 이유 : MDN are the ones that create the standards, MDN is non profit, W3C has commercial interests + the source of W3C is MDN :)
+11. 옆에 다른요소가 올수있으면 inline, 없으면 block
+12. 인라인은 높이와 넓이를 가질수 없다
+13. margine은 box 경계로부터 바깥에 있는 공간이다
+14.      margin: 20px 15px 12px 9px; 이러면 시계방향 순으로 적용(위 오 아래 왼)
+15.      margin: 20px 15px ; 이러면 상하, 좌우 순으로 적용
+16. collapsing margins 현상 : 위아래 경계가 일치하면 두 요소의 마진은 1개로 취급한다(ex. div, body 경계가 같은경우)
 
-3.0부터 진행
+
+
+
 
 =vsc 간편 단축키=
 VSC 간편 단축키
