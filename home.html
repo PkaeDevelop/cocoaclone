@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width= , initial-scale=1.0">
-  <title>The Nico Times</title>
-  <style>
-    body{
-      margin: 0px;
-      background-color: thistle;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>The Nico Times</title>
+    <style>
+      body {
+        height: 100vh;
+        background-color: tomato;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    }
-    html {
-      background-color: tomato;
-    }
-    div {
-      margin:50px 15px;
-      height: 150px;
-      width: 150px;
-      background-color: white;
-    }
-  </style>
-</head>
-<body>
-  <div></div>
-</body>
+      .container {
+        background-color: wheat; /* 베이지색 (wheat 색) */
+        padding: 20px;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .small-box {
+        width: 60px;
+        height: 60px;
+        border: 2px solid white;
+      }
+      .large-box {
+        margin: 20px;
+        width: 200px;
+        height: 60px;
+        border: 2px dashed white;
+      }
+
+      .div-color {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="small-box div-color"></div>
+      <div class="large-box div-color"></div>
+      <div class="small-box div-color"></div>
+    </div>
+  </body>
 </html>
-
