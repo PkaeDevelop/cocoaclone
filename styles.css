@@ -1,4 +1,19 @@
-h1 {
-    color: tomato;
-    font-size: 20px;
-  }
+.text-area {
+  padding: 10px; /* ★ 패딩 줄이기 */
+  background: white;
+  text-align: left;
+  z-index: 2;
+}
+.name {
+  font-weight: bold;
+  font-size: 16px; /* ★ 글자 크기도 조금 줄이기 */
+  margin-bottom: 3px; /* 간격도 조금만 */
+}
+.code {
+  font-size: 14px; /* ★ 코드 글씨도 작게 */
+  font-weight: bold;
+}
+.color-area {
+  width: 100%;
+  height: 150px; /* 컬러박스 크기는 그대로 크게 유지 */
+}
