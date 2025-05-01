@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>Welcome to Kokoa Clone</title>
   </head>
   <body>
-          <!--상태바-->
+    <!--상태바-->
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -28,19 +28,21 @@
     </div>
     <!--헤더-->
     <header class="welcome-header">
-      <h1 class="welcome-header__title">welcome to Kokoa Clone</h1>
-      <p class="welcome-header__text">If you have a Kokoa Account, log in with your email or Phone number.</p>
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or Phone number.
+      </p>
     </header>
     <!--로그인 폼-->
-    <form id="login-form">
-      <input type="text" placeholder="Eamil or phone number">
-      <input type="password" placeholder="Password">
-      <input type="submit" value="Log In">
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" required type="text" placeholder="Eamil or phone number" />
+      <input name="password" required type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
       <a href="#">Find Kokoa Clone Account or Password</a>
     </form>
     <script
-    src="https://kit.fontawesome.com/0647cc056f.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/0647cc056f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
