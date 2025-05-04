@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- GitHub Pages 루트 기준으로 모든 상대경로가 올바르게 해석되도록 설정 -->
+
+    <base href="/cocoaclone/" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Kokoa Clone</title>
+
+    <!-- 메인 CSS 불러오기 -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      <!-- 스플래시 오버레이 -->
-  <div class="splash" onanimationend="this.remove()">
-    <img src="asset/kakako.png" alt="" />
-  </div>
-      <!-- 화면 크기 경고 오버레이 -->
-  <div class="screen-warning">
-    화면을 줄여주세요!
-  </div>
-    <!--상태바-->
+    <!-- 스플래시 애니메이션 오버레이 -->
+    <div class="splash" onanimationend="this.remove()">
+      <img src="asset/kakako.png" alt="Splash" />
+    </div>
+
+    <!-- 화면 크기 경고 오버레이 -->
+    <div class="screen-warning">
+      화면을 줄여주세요!
+    </div>
+
+    <!-- 상태바 -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <!--와이파이 Icon-->
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
-
       <div class="status-bar__column">
-        <span>110%</span>
-        <!--배터리 아이콘-->
+        <span>100%</span>
         <i class="fa-solid fa-battery-full"></i>
-        <!--충전중아이콘-->
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
-    <!--헤더-->
+
+    <!-- 환영 헤더 -->
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
       <p class="welcome-header__text">
         If you have a Kokoa Account, log in with your email or Phone number.
       </p>
     </header>
-    <!--로그인 폼-->
+
+    <!-- 로그인 폼 -->
     <form action="friends.html" method="get" id="login-form">
-      <input name="username" required type="text" placeholder="Eamil or phone number" />
-      <input name="password" required type="password" placeholder="Password" />
+      <input
+        name="username"
+        required
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        name="password"
+        required
+        type="password"
+        placeholder="Password"
+      />
       <input type="submit" value="Log In" />
       <a href="#">Find Kokoa Clone Account or Password</a>
     </form>
+
+    <!-- 하단 내비게이션 없음 (로그인 화면이므로) -->
+
+    <!-- FontAwesome 아이콘 스크립트 -->
     <script
       src="https://kit.fontawesome.com/0647cc056f.js"
       crossorigin="anonymous"
