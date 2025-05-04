@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>More – Kokoa Clone</title>
+</head>
+<body>
+      <!-- 스플래시 오버레이 -->
+  <div class="splash" onanimationend="this.remove()">
+    <img src="asset/kakako.png" alt="" />
+  </div>
+      <!-- 화면 크기 경고 오버레이 -->
+  <div class="screen-warning">
+    화면을 줄여주세요!
+  </div>
+  <!-- 상태바 -->
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <i class="fa-solid fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>21:23</span>
+    </div>
+    <div class="status-bar__column">
+      <span>100%</span>
+      <i class="fa-solid fa-battery-full"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <!-- 화면 헤더 -->
+  <header class="screen-header">
+    <h1 class="screen-header__title">More</h1>
+    <div class="screen-header__icons">
+      <!-- 검색 -->
+      <a href="find.html">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      </a>
+      <!-- 음악(예시) -->
+      <span>
+        <i class="fa-solid fa-music fa-lg"></i>
+      </span>
+      <!-- 설정 -->
+      <a href="settings.html" class="screen-header__icon--setting">
+        <i class="fa-solid fa-gear fa-lg"></i>
+        <span class="screen-header__notification"></span>
+      </a>
+    </div>
+  </header>
+  
+
+  <!-- 프로필 섹션 -->
+  <section class="more-profile">
+    <div class="user-component">
+      <div class="user-component__column">
+        <img src="asset/Sahur.PNG"
+             class="user-component__avatar user-component__avatar--xl"
+             alt="Nicolas"/>
+        <div class="user-component__text">
+          <h4 class="user-component__title">Sahur</h4>
+          <p class="user-component__subtitle">+1 123-456-7891 <span class="more-alert">!</span></p>
+        </div>
+      </div>
+      <div class="user-component__column">
+        <i class="fa-solid fa-clipboard fa-2x"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- 기능 그리드 -->
+  <section class="more-grid">
+    <a href="#" class="more-action">
+      <i class="fa-regular fa-calendar-check fa-2x"></i>
+      <span>Calendar</span>
+    </a>
+    <a href="#" class="more-action">
+      <i class="fa-regular fa-folder-open fa-2x"></i>
+      <span>Talk Drive</span>
+      <span class="more-dot"></span>
+    </a>
+    <a href="#" class="more-action">
+      <i class="fa-regular fa-face-smile fa-2x"></i>
+      <span>Emoticons</span>
+    </a>
+    <a href="#" class="more-action">
+        <i class="fa-solid fa-brush fa-2x"></i>
+      <span>Themes</span>
+    </a>
+    <a href="#" class="more-action">
+      <i class="fa-regular fa-user-circle fa-2x"></i>
+      <span>Account</span>
+    </a>
+    <a href="#" class="more-action">
+      <i class="fa-regular fa-comment-dots fa-2x"></i>
+      <span>Openchat</span>
+    </a>
+  </section>
+  <hr/>
+
+  <!-- Suggestions -->
+  <section class="more-suggestions">
+    <div class="more-suggestions__header">Suggestions</div>
+    <div class="more-suggestions__list">
+      <div class="more-sugg-item">
+        <img src="asset/story.jpg" alt="Kakao Story"/>
+        <span>Kakao Story</span>
+      </div>
+      <div class="more-sugg-item">
+        <img src="asset/friedns_kakako.png" alt="kakao friends"/>
+        <span>kakao friends</span>
+      </div>
+      <div class="more-sugg-item">
+        <img src="asset/Friends_Gem.png" alt="Friends Gem"/>
+        <span>Friends Gem</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 네비게이션 바 -->
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a class="nav__link" href="friends.html">
+          <i class="fa-regular fa-user fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="chats.html">
+          <i class="fa-regular fa-comments fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html">
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="more.html">
+          <i class="fa-solid fa-ellipsis fa-2x"></i>
+          <span class="nav__ellipsis"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="https://kit.fontawesome.com/0647cc056f.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+/* header 설정 */
+.screen-header__icon--setting {
+  position: relative;
+}
+.screen-header__notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+/* 상단 액션 버튼 */
+.find-actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--horizontal-space) 0;
+}
+.find-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e363e;
+  font-size: 12px;
+}
+.find-action i {
+  margin-bottom: 8px;
+}
+
+/* 추천 친구 */
+.recommended {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 50px 0;
+}
+.recommended__header {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.recommended__empty {
+  font-size: 16px;
+}
+
+/* 오픈채팅 섹션 */
+.openchat {
+  padding: 0 var(--horizontal-space);
+}
+.openchat__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.openchat__link {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+
+/* 오픈채팅 리스트 */
+.openchat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.openchat-item .user-component {
+  /* user-component 기본 flex 설정이 이미 적용되어 있음 */
+}
+.openchat-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: rgba(0,0,0,0.5);
+  margin-top: 6px;
+}
+.openchat-meta__avatar {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+/* 썸네일 및 좋아요 뱃지 */
+.openchat-thumb {
+  position: relative;
+}
+.openchat-thumb img {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.openchat-thumb__badge {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 11px;
+  padding: 2px 4px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Chat Room – Kokoa Clone</title>
+</head>
+<body>
+      <!-- 스플래시 오버레이 -->
+  <div class="splash" onanimationend="this.remove()">
+    <img src="asset/kakako.png" alt="" />
+  </div>
+      <!-- 화면 크기 경고 오버레이 -->
+  <div class="screen-warning">
+    화면을 줄여주세요!
+  </div>
+  <!-- 상태바 -->
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span><i class="fa-solid fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>21:28</span>
+    </div>
+    <div class="status-bar__column">
+      <span>100%</span><i class="fa-solid fa-battery-full"></i><i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <!-- 헤더 -->
+  <header class="screen-header">
+    <a href="chats.html" class="screen-header__icon--back">
+      <i class="fa-solid fa-arrow-left fa-lg"></i>
+    </a>
+    <h1 class="screen-header__title">Trallallero Trallalla</h1>
+    <div class="screen-header__icons">
+      <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+      <span><i class="fa-solid fa-ellipsis fa-lg"></i></span>
+    </div>
+  </header>
+
+  <!-- 채팅 메시지 영역 -->
+  <main class="chatroom-screen">
+    <!-- 날짜 구분 -->
+    <div class="chatroom-date">Tuesday, June 30, 2020</div>
+
+    <!-- 상대방 메시지 -->
+    <div class="message message--incoming">
+      <img src="asset/tralala.png" class="message__avatar" alt="Nicolás"/>
+      <div>
+        <audio controls>
+          <source src="asset/voice.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <div class="message__time">21:27</div>
+      </div>
+    </div>
+
+    <!-- 내 메시지 -->
+    <div class="message message--outgoing">
+      <div>
+        <div class="message__bubble message__bubble--out">What the F</div>
+        <div class="message__time">21:27</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 입력 바 -->
+  <div class="chatroom-input">
+    <button class="input-btn"><i class="fa-regular fa-square-plus fa-lg"></i></button>
+    <input type="text" placeholder="Type a message…" autofocus />
+    <button class="input-btn"><i class="fa-regular fa-face-smile fa-lg"></i></button>
+    <button class="input-btn send"><i class="fa-solid fa-arrow-up fa-lg"></i></button>
+  </div>
+
+  <!-- 가상 키보드 -->
+  <div class="virtual-keyboard">
+    <div class="keyboard-row">
+      <div class="key">Q</div><div class="key">W</div><div class="key">E</div><div class="key">R</div><div class="key">T</div>
+      <div class="key">Y</div><div class="key">U</div><div class="key">I</div><div class="key">O</div><div class="key">P</div>
+    </div>
+    <div class="keyboard-row">
+      <div class="key spacer"></div>
+      <div class="key">A</div><div class="key">S</div><div class="key">D</div><div class="key">F</div><div class="key">G</div>
+      <div class="key">H</div><div class="key">J</div><div class="key">K</div><div class="key">L</div>
+      <div class="key spacer"></div>
+    </div>
+    <div class="keyboard-row">
+      <div class="key">Z</div><div class="key">X</div><div class="key">C</div><div class="key">V</div><div class="key">B</div>
+      <div class="key">N</div><div class="key">M</div>
+    </div>
+    <div class="keyboard-row">
+      <div class="key large-key">Space</div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/0647cc056f.js" crossorigin="anonymous"></script>
+</body>
+</html>

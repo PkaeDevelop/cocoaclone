@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Friends - Kokoa Clone</title>
+    <title>Chats – Kokoa Clone</title>
   </head>
   <body>
       <!-- 스플래시 오버레이 -->
@@ -19,24 +19,21 @@
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <!-- 와이파이 아이콘 -->
         <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
-        <span>110%</span>
-        <!-- 배터리 아이콘 -->
+        <span>100%</span>
         <i class="fa-solid fa-battery-full"></i>
-        <!-- 충전 중 아이콘 -->
         <i class="fa-solid fa-bolt"></i>
       </div>
     </div>
 
     <!-- 헤더 -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <!-- 검색 -->
         <a href="find.html">
@@ -53,85 +50,54 @@
         </a>
       </div>
     </header>
-    
 
-    <!-- 친구 없다고 알려주는 문구 -->
-    <a id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i>
-      Friends'Names Display
-      <i class="fa-solid fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
-      <!-- 유저 컴포넌트 -->
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="asset/Sahur.PNG"
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">
-              Tung Tung Tung Tung Tung Tung Tung Tung Tung Sahur
-            </h4>
-          </div>
-        </div>
-        <div class="user-component__column"></div>
-      </div>
-
-      <!-- 채널 섹션 -->
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-chevron-up fa-xs"></i>
-        </div>
-
-        <!-- 유저 컴포넌트 -->
+    <!-- 채팅 리스트 -->
+    <main class="chats-screen">
+      <a href="chatroom.html" class="chat-link">
         <div class="user-component">
           <div class="user-component__column">
             <img
-              src="asset/Channel.PNG"
-              class="user-component__avatar user-component__avatar--sm"
+              src="asset/tralala.png"
+              class="user-component__avatar user-component__avatar--xl"
+              alt="KakaoTalk"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
+              <h4 class="user-component__title">Tralalero Tralala</h4>
+              <p class="user-component__subtitle">
+                Trallallero Trallalla, porco dio e porco Allah.
+              </p>
             </div>
           </div>
-          <div class="user-component__column">
-            <span>2</span>
-            <i class="fa-solid fa-chevron-right fa-xs"></i>
+          <div class="user-component__column user-component__column--meta">
+            <span class="chat-time">21:22</span>
+            <span class="chat-badge">1</span>
           </div>
         </div>
-      </div>
+      </a>
+      <!-- 같은 구조로 다른 채팅 항목을 반복 -->
     </main>
 
-    <!-- 네비게이션 바 -->
+    <!-- 네비게이션 바 (기존과 동일) -->
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <!-- 친구(사람 모양) 아이콘 -->
           <a class="nav__link" href="friends.html">
-            <i class="fa-solid fa-user fa-2x"></i>
+            <i class="fa-regular fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <!-- 메세지 아이콘 -->
           <a class="nav__link" href="chats.html">
             <span class="nav__notification">1</span>
-            <i class="fa-regular fa-comments fa-2x"></i>
+            <i class="fa-solid fa-comments fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <!-- 돋보기 아이콘 -->
           <a class="nav__link" href="find.html">
             <i class="fa-solid fa-magnifying-glass fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <!-- ... 아이콘 -->
-          <a class="nav__link" href="#">
+          <a class="nav__link" href="more.html">
             <i class="fa-solid fa-ellipsis fa-2x"></i>
             <span class="nav__ellipsis"></span>
           </a>

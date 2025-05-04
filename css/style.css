@@ -10,7 +10,68 @@
 /*screens*/
 @import url(screens/login.css);
 @import url(screens/friends.css);
+@import url(screens/chats.css);
+@import url(screens/find.css);
+@import url(screens/more.css);
+@import url(screens/settings.css);
+@import url(screens/chatroom.css);
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 120vh;
   color: #2e363e;
 }
+
+/* 1) 오버레이 기본 스타일: 숨김 + 전체 덮기 */
+.screen-warning {
+  display: none;               /* 기본 숨김 */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  /* 배경: 노랑→짙은 회색 그라디언트 */
+  background: linear-gradient(135deg, #fae100, #2e363e);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 9999;
+}
+
+/* 뷰포트 너비가 800px 이상일 때만 보이기 */
+@media (max-width: 800px) {
+  .screen-warning {
+    display: none;
+  }
+}
+
+
+/* 스플래시 오버레이 */
+.splash {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+
+  /* 1초 동안 유지 후, 0.5초에 걸쳐 서서히 사라지기 */
+  animation: splashFade 0.5s ease-out 0.5s forwards;
+}
+
+.splash img {
+  width: 80px;
+  height: 80px;
+}
+
+/* keyframes 정의 */
+@keyframes splashFade {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}
+
+

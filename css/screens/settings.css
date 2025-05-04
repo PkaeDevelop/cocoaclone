@@ -1,0 +1,40 @@
+.settings-screen {
+    padding: 0 var(--horizontal-space);
+  }
+  .settings-list {
+    list-style: none;
+  }
+  .settings-item,
+  .settings-separator {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .settings-separator {
+    border: none;
+    margin: 12px 0;
+  }
+  .settings-item i {
+    margin: 0 16px;
+    font-size: 18px;
+    color: #2e363e;
+  }
+  .settings-item span {
+    font-size: 14px;
+    color: #2e363e;
+  }
+  .settings-item__value {
+    margin-left: auto;
+    font-size: 13px;
+    color: rgba(0,0,0,0.5);
+  }
+  .settings-new-dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: tomato;
+    border-radius: 50%;
+    margin-left: 8px;
+  }
+  

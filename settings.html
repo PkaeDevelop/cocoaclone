@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <title>Settings – Kokoa Clone</title>
+</head>
+<body>
+      <!-- 스플래시 오버레이 -->
+  <div class="splash" onanimationend="this.remove()">
+    <img src="asset/kakako.png" alt="" />
+  </div>
+      <!-- 화면 크기 경고 오버레이 -->
+  <div class="screen-warning">
+    화면을 줄여주세요!
+  </div>
+  <!-- 상태바 -->
+  <div class="status-bar">
+    <div class="status-bar__column">
+      <span>No Service</span>
+      <i class="fa-solid fa-wifi"></i>
+    </div>
+    <div class="status-bar__column">
+      <span>21:23</span>
+    </div>
+    <div class="status-bar__column">
+      <span>100%</span>
+      <i class="fa-solid fa-battery-full"></i>
+      <i class="fa-solid fa-bolt"></i>
+    </div>
+  </div>
+
+  <!-- 화면 헤더 -->
+  <header class="screen-header">
+    <!-- ← 뒤로가기 -->
+    <a href="more.html" class="screen-header__icon--back">
+      <i class="fa-solid fa-arrow-left fa-lg"></i>
+    </a>
+    <h1 class="screen-header__title">Settings</h1>
+    <!-- 검색 아이콘 -->
+    <a href="find.html" class="screen-header__icon--search">
+      <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+    </a>
+  </header>
+
+  <!-- 설정 리스트 -->
+  <main class="settings-screen">
+    <ul class="settings-list">
+      <li class="settings-item">
+        <i class="fa-solid fa-bullhorn"></i>
+        <span>Notices</span>
+      </li>
+      <li class="settings-item">
+        <i class="fa-solid fa-flask"></i>
+        <span>Kakao Lab</span>
+      </li>
+      <li class="settings-item">
+        <i class="fa-solid fa-info"></i>
+        <span>Version</span>
+        <span class="settings-item__value">Latest Version</span>
+      </li>
+
+      <li class="settings-separator"></li>
+
+      <li class="settings-item">
+        <i class="fa-solid fa-lock"></i>
+        <span>Privacy</span>
+      </li>
+      <li class="settings-item">
+        <i class="fa-regular fa-bell"></i>
+        <span>Notifications</span>
+      </li>
+      <li class="settings-item">
+        <i class="fa-regular fa-user"></i>
+        <span>Friends</span>
+      </li>
+      <li class="settings-item">
+        <i class="fa-regular fa-comments"></i>
+        <span>Chats</span>
+      </li>
+      <li class="settings-item">
+        <i class="fa-regular fa-sun"></i>
+        <span>Display</span>
+        <span class="settings-new-dot"></span>
+      </li>
+      <li class="settings-item">
+        <i class="fa-solid fa-brush"></i>
+        <span>Themes</span>
+        <span class="settings-new-dot"></span>
+        <span class="settings-item__value">Default theme</span>
+      </li>
+      <li class="settings-item">
+        <i class="fa-solid fa-mobile"></i>
+        <span>Call</span>
+      </li>
+      <!-- 필요에 따라 아이템 추가 -->
+    </ul>
+  </main>
+
+  <!-- 하단 네비게이션 (기존과 동일) -->
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__btn">
+        <a class="nav__link" href="friends.html">
+          <i class="fa-regular fa-user fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="chats.html">
+          <i class="fa-regular fa-comments fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="find.html">
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        </a>
+      </li>
+      <li class="nav__btn">
+        <a class="nav__link" href="more.html">
+          <i class="fa-solid fa-ellipsis fa-2x"></i>
+          <span class="nav__ellipsis"></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <script src="https://kit.fontawesome.com/0647cc056f.js" crossorigin="anonymous"></script>
+</body>
+</html>

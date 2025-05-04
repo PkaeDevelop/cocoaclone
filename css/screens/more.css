@@ -1,0 +1,85 @@
+/* header setting-dot */
+.screen-header__icon--setting {
+  position: relative;
+}
+.screen-header__notification {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
+/* 프로필 섹션 */
+.more-profile {
+  padding: var(--horizontal-space);
+}
+.more-alert {
+  color: tomato;
+  margin-left: 6px;
+}
+
+/* 기능 그리드 */
+.more-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 var(--horizontal-space);
+  margin: 20px 0;
+}
+.more-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2e363e;
+  font-size: 12px;
+  position: relative;
+}
+.more-action i {
+  margin-bottom: 8px;
+}
+.more-dot {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: 6px;
+  height: 6px;
+  background-color: tomato;
+  border-radius: 50%;
+}
+/* Talk Drive 위의 점 숨기기 */
+.more-grid .more-action:nth-child(2) .more-dot {
+  display: none;
+}
+
+/* Suggestions */
+.more-suggestions {
+  padding: 0 var(--horizontal-space);
+}
+.more-suggestions__header {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+.more-suggestions__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 0 var(--horizontal-space);
+}
+.more-sugg-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  color: #2e363e;
+}
+.more-sugg-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 6px;
+}
